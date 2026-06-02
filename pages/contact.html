@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="contact-page">
+        
+    <header>
+        <div class="logo-container">
+            <img src="images/logo1.png" alt="ShopHub Logo" class="logo-icon">
+            <h1>ShopHub</h1>
+        </div>
+  <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+   
+    </nav>
+    </header>
+<section class="content">
+    <div id="form-status" class="form-status" aria-live="polite"></div>
+    <form id="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+    </form>
+</section>
+<script>
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formStatus = document.getElementById('form-status');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        submitBtn.disabled = true;
+        formStatus.textContent = 'Message sent';        formStatus.classList.add('active');        alert('Message sent successfully!');
+    });
+</script>
+<footer>
+    <p>&copy; 2026 ShopHub. All rights reserved.</p>
+</footer>  
+</body>          
+</html>          
