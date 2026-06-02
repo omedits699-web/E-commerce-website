@@ -13,7 +13,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url('images/sale ani.png');
+    background-image: url('../images/sale ani.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body.contact-page::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url('images/contact us.png');
+    background-image: url('../images/contact us.png');
     background-size: cover;
     background-position: left center;
     
@@ -92,7 +92,7 @@ nav a::after {
     transition: width 0.3s, left 0.3s;
 }
 .hero {
-    background: url('images/sale ani.png') center/cover fixed;
+    background: url('../images/sale ani.png') center/cover fixed;
     background-color: transparent;
     background-blend-mode: normal;
     color: #fff;
@@ -370,7 +370,7 @@ nav a::after {
 .remove-btn {
     background-color: #fc0202;
     color: white;
-    width: 30px;
+    width: 70px;
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
